@@ -1,14 +1,49 @@
 <ion-header>
+
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Click That!
     </ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <ion-grid>
+    <ion-row class="column">
+      <img src="../../assets/imgs/tvs/ClickThatTitle2.png" 
+      id="title" />
+    </ion-row>
+    <ion-row class="column">
+      <img src="../../assets/imgs/buttons/PlayButton.png" 
+      (click)="onPlay()" 
+      class="button"
+      id="play" />
+    </ion-row>
+    <ion-row class="column">
+      <img src="../../assets/imgs/buttons/HighScoreButton.png" 
+      (click)="onHighScore()" 
+      class="button"
+      id="highscore" />
+    </ion-row>
+    <ion-row class="column">
+      <img src="../../assets/imgs/buttons/HowToPlayButton.png " 
+      (click)="onHowToPlay()" 
+      class="button"
+      id="howtoplay" />
+    </ion-row>
+  </ion-grid>
 </ion-content>

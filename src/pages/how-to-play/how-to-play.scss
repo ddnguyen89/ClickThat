@@ -1,0 +1,90 @@
+page-how-to-play {
+   
+    button:disabled {
+        background: transparent;
+    }
+
+    button:active {
+        animation: pulse 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    @keyframes pulse {
+       to {box-shadow: 0 0 0 15px red;}
+    }
+
+    button {
+        margin: 0 auto;
+        border-radius: 30%;
+        background: #FFFFFF;
+        box-shadow: -3px 0 #000000,
+        0 3px #000000,
+        3px 0 #000000,
+        0 -3px #000000,
+        2px 2px #000000,
+        2px -2px #000000,
+        -2px -2px #000000,
+        -2px 2px #000000;
+    }
+
+    #title {
+        transform: rotate(-4deg);
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        width: 100%;
+        height: 20%;
+    }
+
+    #beforetimerunsout {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        height: 20%;
+    }
+
+    #about, #menu {
+        margin-top: 50%;
+        width: 100%;
+    }
+
+    #about {
+        transform: rotate(-4deg);
+    }
+
+    #menu {
+        transform: rotate(4deg);
+    }
+
+    #about:active, #menu:active {
+        box-shadow: 0 5px black;
+        transform: translateY(5px);
+    }
+
+    #arrowclick {
+        margin-top: -20%;
+    }
+
+    #buttondontclick {
+        margin-top: 30%;
+    }
+
+    .clickrow, .dontclickrow {
+        padding: 2%;
+        border: .2em solid black;
+        background: white;
+        border-radius: 8px;
+    }
+
+    .clickrow {
+        transform: rotate(2deg);
+    }
+
+    .dontclickrow {
+        transform: rotate(-2deg);
+    }
+
+    ion-grid {
+        height: 100%;
+    }
+    
+}

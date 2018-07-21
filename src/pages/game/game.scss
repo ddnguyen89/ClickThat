@@ -1,0 +1,88 @@
+page-game {
+
+    #clickthat button:disabled {
+        background: transparent;
+    }
+
+    button:active {
+        animation: pulse 1.5s cubic-bezier(0.0, 1, 0.0, 1);
+    }
+
+    @keyframes pulse {
+       to {box-shadow: 0 0 0 15px red;}
+    }
+
+    #clickthat button {
+        border-radius: 30%;        
+        background: #FFFFFF;
+        box-shadow: -3px 0 #000000,
+        0 3px #000000,
+        3px 0 #000000,
+        0 -3px #000000,
+        2px 2px #000000,
+        2px -2px #000000,
+        -2px -2px #000000,
+        -2px 2px #000000;
+    }
+
+    #score, #time {
+        margin: 0 auto;
+        text-align: right;
+        width: 70%; 
+        height: 80%;
+    }
+
+    #score {
+        height: 80%;
+    }
+
+    h1 {
+        text-align: center;
+
+        font-weight: bold;
+        color: #f23333;
+        font-size: 50px;
+    
+        text-shadow: -2px 0 #ffffff,
+            0 2px #ffffff,
+            2px 0 #ffffff,
+            0 -2px #ffffff,
+            -4px 0 #000000,
+            0 4px #000000,
+            4px 0 #000000,
+            0 -4px #000000,
+            3px 3px #000000,
+            3px -3px #000000,
+            -3px -3px #000000,
+            -3px 3px #000000;
+    }
+
+    .tvbox {
+        margin-bottom: 10%;
+        border: .2em solid black;
+        background: white;
+        border-radius: 8px;
+        
+        ion-row {
+            text-align: right;
+        }
+    }
+
+    #secondrow, #thirdrow, #fourthrow {
+        margin-top: 7%;
+    }
+
+    #giveup {
+        margin: 0 auto;
+        margin-top: 25%;
+        width: 40%;
+    }
+
+
+    ion-grid {
+        height: 100%;
+        ion-row {
+            text-align: center;
+        }
+    }
+}

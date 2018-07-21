@@ -1,0 +1,120 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>Click That!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <ion-grid>
+    <ion-row class="tvbox">
+      <ion-row class="tv">
+        <ion-col col-7>
+          <img src="../../assets/imgs/tvs/ScoreTV.png"
+          id="score" />
+        </ion-col>
+        <ion-col col-5>
+          <h1 id="scoretext">{{yourScore||0}}</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="tv">
+        <ion-col col-7>
+          <img src="../../assets/imgs/tvs/TimeTV.png"
+          id="time" />
+        </ion-col>
+        <ion-col col-5>
+          <h1 id="timetext">{{timer}}</h1>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+    <ion-row>
+      <ion-grid id="clickthat">
+
+        <ion-row id="firstrow">
+          <ion-col>
+            <button ion-button id="btn1" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn2" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn3" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn4" (click)="clicked($event)" tappable></button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row id="secondrow">
+          <ion-col>
+            <button ion-button id="btn5" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn6" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn7" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn8" (click)="clicked($event)" tappable></button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row id="thirdrow">
+          <ion-col>
+            <button ion-button id="btn9" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn10" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn11" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn12" (click)="clicked($event)" tappable></button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row id="fourthrow">
+          <ion-col>
+            <button ion-button id="btn13" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn14" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn15" (click)="clicked($event)" tappable></button>
+          </ion-col>
+          <ion-col>
+            <button ion-button id="btn16" (click)="clicked($event)" tappable></button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-row>
+
+    <ion-row>
+      
+      <ion-col col-12>
+        <img src="../../assets/imgs/buttons/GiveUpButton.png"
+        (click)="onGiveUp()"
+        id="giveup" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

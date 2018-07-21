@@ -1,0 +1,68 @@
+page-high-score {
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-weight: bold;
+        color: #f23333;
+        font-size: 50px;
+    
+        text-shadow: -2px 0 #ffffff,
+            0 2px #ffffff,
+            2px 0 #ffffff,
+            0 -2px #ffffff,
+            -4px 0 #000000,
+            0 4px #000000,
+            4px 0 #000000,
+            0 -4px #000000,
+            3px 3px #000000,
+            3px -3px #000000,
+            -3px -3px #000000,
+            -3px 3px #000000;
+    }
+
+    #yourscore, #highscore {
+        margin: 0 auto;
+        width: 100%; 
+        height: 100%;
+    }
+
+    #playagain {
+        margin: 0 auto;
+        margin-top: 15%;
+        width: 80%;
+        transform: rotate(-5deg);
+    }
+
+    #menu {
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        width: 40%;
+        transform: rotate(4deg);
+    }
+
+    #resetscore {
+        margin-top: 10%;
+        transform: rotate(-4deg);
+    }
+
+    #playagain:active, #menu:active, #resetscore:active {
+        box-shadow: 0 5px black;
+        transform: translateY(5px);
+    }
+
+    .tv {
+        margin-top: 10%;
+        text-align: right;
+        border: .2em solid black;
+        background: white;
+        border-radius: 8px;
+    }
+
+    ion-grid {
+        height: 100%;
+        ion-row {
+            text-align: center;
+        }
+    }
+}

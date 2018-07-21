@@ -5,21 +5,37 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { IonicStorageModule } from '@ionic/storage';
+
 import { HomePage } from '../pages/home/home';
+import { GamePage } from '../pages/game/game';
+import { HighScorePage } from '../pages/high-score/high-score';
+import { HowToPlayPage } from '../pages/how-to-play/how-to-play';
+import { AboutPage } from '../pages/about/about';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    GamePage,
+    HighScorePage,
+    HowToPlayPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    GamePage,
+    HighScorePage,
+    HowToPlayPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,54 @@
 page-home {
+    .scroll-content {
+        animation: scroll-content 7s infinite both;
+    }
+    @keyframes scroll-content {
+        0% { background: #72FE95; 
+            background-position: 50% 100%; }
+        50% { background: #86BCFF;
+            background-position: 50% 50%; } 
+        100% { background: #72FE95;
+            background-position: 50% 0%; }
+    }
 
+    #title {
+        margin: 0 auto;
+        transform: rotate(-15deg);
+        width: 80%;
+        height: 10%;
+    }
+
+    .button {
+        display: inline-block;
+        position: relative;   
+        margin: 0 auto;
+        margin-top: 7%;
+        width: 50%;
+        height: 20%;
+    }
+
+    #play {
+        transform: rotate(-7deg);
+        margin-left: 2%;
+    }
+
+    #highscore {
+        transform: rotate(-2deg);
+    }
+
+    #howtoplay {
+        transform: rotate(4deg);
+        margin-right: 2%;
+        margin-top: 12%;
+    }
+
+    #play:active, #highscore:active, #howtoplay:active {
+        box-shadow: 0 5px black;
+        transform: translateY(5px);
+    }
+
+
+
+    
+    
 }

@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>About</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <ion-grid>
+    <ion-row>
+      <img src="../../assets/imgs/profile_pic.jpg" 
+      id="title" />
+    </ion-row>
+    <ion-row>
+        <ion-col col-5>
+            <img src="../../assets/imgs/buttons/HowToPlayButton.png"
+            (click)="onHowToPlay()" 
+            id="howtoplay" />
+          </ion-col>
+          <ion-col col-2></ion-col>
+          <ion-col col-5>
+            <img src="../../assets/imgs/buttons/MenuButton.png"
+            (click)="onHome()" 
+            id="menu" />
+          </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

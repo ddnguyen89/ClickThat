@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>HighScore</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  
+  <ion-grid>
+    <ion-row class="tv">
+      <ion-col col-7>
+        <img src="../../assets/imgs/tvs/YourScoreTV.png"
+        id="yourscore" />
+      </ion-col>
+      <ion-col col-5>
+        <h1>{{yourScore||0}}</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="tv">
+      <ion-col col-7>
+        <img src="../../assets/imgs/tvs/HighScoreTV.png"
+        id="highscore" />
+      </ion-col>
+      <ion-col col-5>
+        <h1>{{highScore||0}}</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/imgs/buttons/PlayAgainButton.png"
+        (click)="onPlayAgain()"
+        id="playagain" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/imgs/buttons/MenuButton.png "
+        (click)="onMenu()"
+        id="menu" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <img src="../../assets/imgs/buttons/ResetScoreButton.png "
+        (click)="onResetScore()"
+        id="resetscore" />
+      </ion-col>
+      <ion-col col-6></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

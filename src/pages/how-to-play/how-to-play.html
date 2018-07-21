@@ -1,0 +1,76 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>How To Play</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+ <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <ion-grid>
+    <ion-row class='row'>
+      <img src="../../assets/imgs/tvs/HowToPlayTV.png" 
+      id="title" />
+    </ion-row>
+
+    <ion-row class='clickrow'>
+      <ion-col col-7>
+        <img src="../../assets/imgs/tvs/ClickThatTV.png" 
+        id="clickthat" />
+      </ion-col>
+      <ion-col col-3>
+        <img src="../../assets/imgs/tvs/ArrowTV.png" 
+        id="arrowclick" />
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button></button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class='row'>
+        <img src="../../assets/imgs/tvs/BeforeTimeRunsOutTV.png" 
+        id="beforetimerunsout" />
+    </ion-row>
+
+    <ion-row class='dontclickrow'>
+      <ion-col col-7>
+        <img src="../../assets/imgs/tvs/DontClickThoseTV2.png" 
+        id="dontclickthose" />
+      </ion-col>
+      <ion-col col-3>
+        <img src="../../assets/imgs/tvs/ArrowTV.png" 
+        id="arrowdontclick" />
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button [disabled]="true" id="buttondontclick"></button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class='row'>
+      <ion-col>
+        <img src="../../assets/imgs/buttons/AboutButton.png"
+        (click)="onAbout()" 
+        id="about" />
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <img src="../../assets/imgs/buttons/MenuButton.png"
+        (click)="onHome()" 
+        id="menu" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
